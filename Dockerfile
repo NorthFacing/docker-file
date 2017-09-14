@@ -21,10 +21,10 @@ RUN cd /root/joyoung/ && \
     git checkout jdk160 && \
     cp -rf jdk1.6.0_38 ../jdk1.6.0_38 && \
     git checkout playframework && \
-    cp -rf playframework ../playframework && \
+    cp -rf playFramework ../playFramework && \
+    cd .. && \
     rm -rf sdk/
 
-ADD jdk1.6.0_38/ /root/joyoung/jdk1.6.0_38/
 ADD precompile_jy_ras_cms.sh /root/joyoung/precompile_jy_ras_cms.sh
 
 ENV PLAY_HOME /root/joyoung/playFramework
